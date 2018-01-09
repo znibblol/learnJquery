@@ -5,17 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="scss/style.css">
 
     <title>Learn JQuery</title>
   </head>
   <body>
-    <h1>How to learn JQuery</h1>
+    <h1 id="mainH1">How to learn JQuery</h1>
+    <div class="container">
+        <h1>Hejsan</h1>
+    </div>
+    <button id="btn1">Hejsan</button>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+
+    <script>
+    
+        $(document).ready(function() {
+
+            $("#btn1").on("click",function() {
+                $(".container").slideToggle(200);
+            });
+
+        });
+
+
+    </script>
+
   </body>
 </html>
